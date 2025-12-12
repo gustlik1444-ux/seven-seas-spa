@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seven Seas SPA</title>
 
+    <!-- Google Fonts: Handlee -->
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            /* remove default gap at the very top */
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 45vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 2rem;
+            padding-bottom: 2.5rem;
+        }
+
+        .hero h1 {
+            font-family: 'Handlee', cursive;
+            color: #FFEBD4;
+        }
+
+        .hero p {
+            color: #FFEBD4;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +76,15 @@
         </div>
     </nav>
 
-    <h1 class="text-center mt-5">Hello, world!</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero"
+        style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/images/ChatGPT Image Dec 12, 2025, 02_48_08 AM.png');">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold mb-3">Welcome to Seven Seas Spa</h1>
+            <p class="fs-5 mb-4">We are dedicated to improving your overall wellbeing.</p>
+            <button class="btn btn-light px-4 py-2">Contact Us</button>
+        </div>
+    </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
